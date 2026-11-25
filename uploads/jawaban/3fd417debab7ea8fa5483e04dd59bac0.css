@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 30px;
+}
+
+.container {
+    width: 420px;
+    max-width: 100%;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #164e87;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #124d80;
+}
+
+.container p {
+    margin-top: 18px;
+    text-align: center;
+}
+
+a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+.navbar {
+    background: #eaf3fc;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    background: #dc3545;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 5px;
+}
+
+.tambah {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    padding: 11px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #dbe2ea;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #164e87;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.edit, .hapus {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 4px;
+    color: white;
+    margin: 2px;
+}
+
+.edit {
+    background: #e0a800;
+}
+
+.hapus {
+    background: #dc3545;
+}
+
+.kembali {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    background: #64748b;
+    color: white;
+    border-radius: 5px;
+}
+
+.pesan {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .wrapper {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}

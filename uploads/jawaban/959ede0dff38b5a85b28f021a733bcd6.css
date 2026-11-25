@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: #0F172A;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.kartu-registrasi {
+    width: min(100%, 450x);
+    padding: 28px;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    background: #1e293b;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.pengantar {
+    margin: 0 0 20px;
+    color: #666;
+}
+
+.pesan-formulir {
+    padding: 10px;
+    border-radius: 4px;
+    background: #f8eaea;
+    color: #922;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 6px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    margin-top: 8px;
+    border-color: #0F172A;
+    background: #0F172A;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #21325c;
+}
+
+.tautan-masuk {
+    margin: 20px 0 0;
+    color: #f8fafc;
+    text-align: center;
+}
+
+.tautan-masuk a {
+    color: #f8fafc;
+}
+
+@media (max-width: 480px) {
+    .kartu-registrasi {
+        padding: 22px;
+    }
+}

@@ -1,0 +1,25 @@
+body {
+    background: #f4f6fb;
+}
+
+.auth-bg {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+}
+
+.navbar-lab {
+    background: linear-gradient(90deg, #224abe, #4e73df);
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.table thead th {
+    background: #224abe;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.badge-kondisi {
+    font-size: .85rem;
+}

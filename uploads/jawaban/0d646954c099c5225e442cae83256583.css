@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f0fe 0%, #f0f4f8 100%);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+/* Container utama */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Container login & register */
+.auth-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 40px 35px;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #1e3a5f;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Header bar di dashboard */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eef2f7;
+}
+
+.header-bar h2 {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.user-info strong {
+    color: #1e3a5f;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #d0d7de;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+    background: #fafbfc;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 6px;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+    background: #4a90e2;
+}
+
+.btn-primary:hover {
+    background: #3a7bc8;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-warning {
+    background: #f0ad4e;
+}
+
+.btn-warning:hover {
+    background: #ec971f;
+}
+
+.btn-danger {
+    background: #e74c3c;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.btn-logout {
+    background: #e74c3c;
+    padding: 7px 14px;
+    font-size: 13px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    background: #1e3a5f;
+    color: white;
+    padding: 13px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eef2f7;
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+table tr:hover {
+    background: #eef5ff;
+}
+
+/* Alert */
+.alert {
+    padding: 13px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #fdecea;
+    color: #b71c1c;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #c8e6c9;
+}
+
+/* Link auth */
+.auth-link {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-link a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .auth-container {
+        margin: 30px auto;
+        padding: 30px 25px;
+    }
+}

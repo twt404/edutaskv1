@@ -1,0 +1,263 @@
+/* =========================================================
+   STYLE.CSS - Aplikasi Katalog Buku Perpustakaan Sekolah
+   Tema: Biru langit / biru laut lembut
+   ========================================================= */
+
+:root {
+    --bg-1: #e3f2fd;          /* biru langit sangat muda */
+    --bg-2: #cfe9fb;          /* biru langit muda */
+    --primary: #2b8fd6;       /* biru laut cerah */
+    --primary-dark: #1b6fb0;
+    --primary-soft: #eaf5fd;
+    --border: #b9d9ef;
+    --text: #1f3b4d;
+    --text-soft: #5b7a8e;
+    --success: #2bb673;
+    --success-dark: #1f9a5e;
+    --danger: #e45858;
+    --danger-dark: #c93f3f;
+    --gray: #8aa0ae;
+    --gray-dark: #6f8694;
+    --shadow: 0 8px 24px rgba(43, 143, 214, 0.15);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+    background: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 100%);
+    background-attachment: fixed;
+}
+
+/* ===== Kartu utama ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 25px 30px;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--primary-dark);
+}
+
+/* ===== Header (Halo, nama + Logout) ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+}
+
+.header a.logout {
+    color: var(--danger);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.header a.logout:hover { color: var(--danger-dark); }
+
+/* ===== Tombol tambah ===== */
+.btn-tambah {
+    display: inline-block;
+    padding: 9px 16px;
+    background: var(--success);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-tambah:hover {
+    background: var(--success-dark);
+    transform: translateY(-1px);
+}
+
+/* ===== Tabel ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) { background: #f5fafe; }
+tbody tr:hover { background: var(--primary-soft); }
+
+td.center, th.center { text-align: center; }
+
+/* ===== Tombol aksi [E] [H] ===== */
+.aksi a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 9px;
+    border-radius: 4px;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.aksi a.edit  { background: var(--primary); }
+.aksi a.edit:hover  { background: var(--primary-dark); }
+.aksi a.hapus { background: var(--danger); }
+.aksi a.hapus:hover { background: var(--danger-dark); }
+
+.kosong {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-soft);
+}
+
+.keterangan {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-top: 14px;
+}
+
+/* ===== Form Tambah, Edit, Login, Register ===== */
+.form-container { max-width: 500px; }
+
+.form-group { margin-bottom: 15px; }
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text);
+    background: #fbfdff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(43, 143, 214, 0.18);
+    background: #fff;
+}
+
+.form-group input.input-kecil { width: 110px; }
+
+.form-buttons {
+    margin-top: 22px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-simpan {
+    padding: 9px 18px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-simpan:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.btn-kembali {
+    padding: 9px 18px;
+    background: var(--gray);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-kembali:hover { background: var(--gray-dark); }
+
+/* ===== Pesan notifikasi ===== */
+.alert {
+    background: #fdeeee;
+    border: 1px solid #f1b5b5;
+    border-left: 4px solid var(--danger);
+    color: var(--danger-dark);
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.alert-sukses {
+    background: #e9f8f0;
+    border: 1px solid #a9e3c8;
+    border-left: 4px solid var(--success);
+    color: var(--success-dark);
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* ===== Link bawah (login <-> register) ===== */
+.link-bawah {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-soft);
+}
+
+.link-bawah a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-bawah a:hover { text-decoration: underline; }
+
+/* ===== Responsif (HP / layar kecil) ===== */
+@media (max-width: 600px) {
+    body { padding: 15px 10px; }
+    .container { padding: 18px 15px; }
+    h2 { font-size: 17px; }
+    th, td { padding: 8px 6px; font-size: 13px; }
+}

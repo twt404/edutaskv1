@@ -1,0 +1,169 @@
+/* Reset & Gaya Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e9ecef; /* Abu-abu terang lembut untuk latar belakang */
+    color: #212529; /* Abu-abu sangat gelap untuk teks */
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+/* Judul Halaman (index.php, edit.php, login.php) */
+h1, h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Tautan / Link Navigasi (+ Tambah Siswa, Edit, Hapus, Logout, Kembali) */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6c757d; /* Abu-abu sedang */
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    background-color: #495057; /* Abu-abu lebih gelap saat diarahkan kursor */
+}
+
+/* Khusus tombol Logout atau Hapus agar sedikit kontras namun tetap senada */
+a[href*="hapus.php"], a[href*="logout.php"] {
+    background-color: #495057;
+}
+
+a[href*="hapus.php"]:hover, a[href*="logout.php"]:hover {
+    background-color: #212529;
+}
+
+/* Styling Tabel (index.php) */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none; /* Menghilangkan border="1" bawaan HTML */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #495057; /* Header tabel abu-abu gelap */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Warna selang-seling abu-abu sangat muda */
+}
+
+tr:hover {
+    background-color: #e2e6ea; /* Sorotan baris saat kursor di atasnya */
+}
+
+/* Merapikan tombol aksi di dalam tabel */
+td a {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Styling Form (login.php, edit.php, tambah.php) */
+form {
+    background-color: #ffffff;
+    max-width: 420px;
+    margin: 0 auto 20px auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ced4da;
+}
+
+/* Menghilangkan bullet point pada ul di edit.php */
+form ul {
+    list-style: none;
+}
+
+form li {
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: 600;
+    color: #495057;
+    font-size: 14px;
+}
+
+/* Input Teks & Password */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #212529;
+    font-size: 14px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #495057;
+    background-color: #ffffff;
+}
+
+/* Tombol Submit (Login & Simpan) */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #343a40; /* Abu-abu arang */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #212529;
+}
+
+/* Pesan Error di login.php */
+p[style*="color:red"] {
+    text-align: center;
+    background-color: #f8d7da;
+    color: #721c24 !important;
+    padding: 10px;
+    max-width: 420px;
+    margin: 0 auto 15px auto;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+}
+

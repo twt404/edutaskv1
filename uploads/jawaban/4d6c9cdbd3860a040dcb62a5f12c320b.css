@@ -1,0 +1,548 @@
+/* =========================================================
+   1. VARIABEL TEMA SERAGAM (NAVY & WARM AMBER)
+   ========================================================= */
+:root {
+    --bg-page: #edf1f7;
+    --bg-card: #fffdf9;
+    --bg-white: #ffffff;
+    --bg-cream: #f5f0e6;
+    --bg-row-alt: #fcfaf6;
+
+    --navy: #0f172a;
+    --navy-soft: #1e293b;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+
+    --amber: #fbbf24;
+    --amber-dark: #d97706;
+    --amber-hover: #f59e0b;
+    --amber-soft: #fef3c7;
+    --amber-text: #92400e;
+
+    --border: #d8cfc2;
+    --border-light: #ebe5da;
+    --input-border: #cbd5e1;
+
+    --danger: #dc2626;
+    --danger-bg: #fee2e2;
+    --danger-border: #fca5a5;
+
+    --shadow-main: 0 18px 38px -18px rgba(15, 23, 42, 0.28);
+    --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Inter, system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: var(--bg-page);
+    background-image:
+        radial-gradient(circle at 10% 10%, rgba(15, 23, 42, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 90% 90%, rgba(217, 119, 6, 0.08) 0%, transparent 45%);
+    color: var(--text-main);
+    min-height: 100vh;
+    line-height: 1.55;
+    padding: 28px 16px;
+}
+
+/* =========================================================
+   2. KARTU AUTH (LOGIN & REGISTER)
+   ========================================================= */
+.auth-wrapper {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--amber-dark);
+    border-radius: 14px;
+    padding: 32px 30px;
+    box-shadow: var(--shadow-main);
+}
+
+.auth-top-badge {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--amber-text);
+    background: var(--amber-soft);
+    border: 1px solid #fcd34d;
+    padding: 4px 11px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.auth-header {
+    margin-bottom: 20px;
+}
+
+.auth-header h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.015em;
+    margin-bottom: 4px;
+}
+
+.auth-header p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+}
+
+.auth-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-light);
+    text-align: center;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+}
+
+.auth-footer a {
+    color: var(--navy);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid var(--amber);
+}
+
+.auth-footer a:hover {
+    background: var(--amber-soft);
+}
+
+/* =========================================================
+   3. KATALOG INDEX (NAVY & AMBER)
+   ========================================================= */
+.catalog-shell {
+    max-width: 1040px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-main);
+}
+
+.catalog-topbar {
+    background: var(--navy);
+    color: #f8fafc;
+    padding: 22px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 4px solid var(--amber-dark);
+}
+
+.catalog-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.catalog-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: var(--amber);
+    color: var(--navy);
+    font-weight: 900;
+    font-size: 0.95rem;
+    display: grid;
+    place-items: center;
+    letter-spacing: 0.03em;
+}
+
+.catalog-brand h2 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.catalog-brand p {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+    margin-top: 2px;
+}
+
+.catalog-session {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.88rem;
+    color: #e2e8f0;
+}
+
+.catalog-session strong {
+    color: var(--amber);
+}
+
+.btn-exit {
+    padding: 6px 13px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fecdd3;
+    background: rgba(225, 29, 72, 0.16);
+    border: 1px solid rgba(251, 113, 133, 0.45);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.18s ease;
+}
+
+.btn-exit:hover {
+    background: var(--danger);
+    color: #ffffff;
+    border-color: var(--danger);
+}
+
+.catalog-body {
+    padding: 24px 28px 28px;
+}
+
+.catalog-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.btn-add-book {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--navy);
+    background: var(--amber);
+    border: 1px solid var(--amber-dark);
+    border-radius: 7px;
+    transition: all 0.18s ease;
+}
+
+.btn-add-book:hover {
+    background: var(--amber-hover);
+    transform: translateY(-1px);
+}
+
+.catalog-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.catalog-table thead {
+    background: var(--bg-cream);
+}
+
+.catalog-table th {
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #334155;
+    border-bottom: 2px solid var(--border);
+}
+
+.catalog-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.catalog-table tbody tr:nth-child(even) {
+    background: var(--bg-row-alt);
+}
+
+.catalog-table tbody tr:hover {
+    background: var(--amber-soft);
+}
+
+.catalog-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.book-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: #f1f5f9;
+    border: 1px solid var(--input-border);
+    color: var(--navy);
+}
+
+.cat-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.cat-pelajaran {
+    background: #e2e8f0;
+    color: var(--navy);
+    border-color: #94a3b8;
+}
+
+.cat-fiksi {
+    background: #fef3c7;
+    color: #78350f;
+    border-color: #f59e0b;
+}
+
+.cat-referensi {
+    background: var(--amber-soft);
+    color: var(--amber-text);
+    border-color: #fcd34d;
+}
+
+.row-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.act-btn {
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.15s ease;
+}
+
+.act-edit {
+    color: var(--navy);
+    background: #e2e8f0;
+    border: 1px solid #94a3b8;
+}
+
+.act-edit:hover {
+    background: var(--navy);
+    color: #ffffff;
+    border-color: var(--navy);
+}
+
+.act-del {
+    color: #991b1b;
+    background: var(--danger-bg);
+    border: 1px solid var(--danger-border);
+}
+
+.act-del:hover {
+    background: var(--danger);
+    color: #ffffff;
+    border-color: var(--danger);
+}
+
+/* =========================================================
+   4. FORM TAMBAH & EDIT (SENADA NAVY & AMBER)
+   ========================================================= */
+.form-shell {
+    max-width: 580px;
+    margin: 20px auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-main);
+}
+
+.form-topbar {
+    background: var(--navy);
+    color: #ffffff;
+    padding: 18px 24px;
+    border-bottom: 4px solid var(--amber-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-topbar h2 {
+    font-size: 1.08rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.mode-pill {
+    font-size: 0.74rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background: var(--amber);
+    color: var(--navy);
+}
+
+.form-body {
+    padding: 24px 26px 28px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 13px;
+    font-size: 0.92rem;
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    border: 1.5px solid var(--input-border);
+    border-radius: 7px;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--amber-dark);
+    box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.16);
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+/* =========================================================
+   5. TOMBOL UMUM & ALERT
+   ========================================================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 18px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-amber {
+    background: var(--amber);
+    color: var(--navy);
+    border: 1px solid var(--amber-dark);
+}
+
+.btn-amber:hover {
+    background: var(--amber-hover);
+    transform: translateY(-1px);
+}
+
+.btn-navy {
+    background: var(--navy);
+    color: #ffffff;
+    border: 1px solid var(--navy);
+}
+
+.btn-navy:hover {
+    background: var(--navy-soft);
+}
+
+.btn-back {
+    background: var(--bg-cream);
+    color: var(--navy);
+    border: 1px solid var(--border);
+}
+
+.btn-back:hover {
+    background: #e7e0d3;
+}
+
+.alert {
+    padding: 11px 14px;
+    border-radius: 7px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.alert-error {
+    background: #fff1f2;
+    color: #be123c;
+    border: 1px solid #fecdd3;
+}
+
+.alert-success {
+    background: var(--amber-soft);
+    color: var(--amber-text);
+    border: 1px solid #fcd34d;
+}
+
+/* =========================================================
+   6. RESPONSIVE
+   ========================================================= */
+@media (max-width: 640px) {
+    body {
+        padding: 14px 10px;
+    }
+
+    .catalog-topbar,
+    .catalog-body,
+    .form-topbar,
+    .form-body,
+    .auth-card {
+        padding: 18px 16px;
+    }
+
+    .catalog-session {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

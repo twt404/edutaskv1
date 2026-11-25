@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1e293b;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+.container {
+    background-color: #ffffff;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+
+.container-form {
+    max-width: 440px;
+}
+
+h2, h3 {
+    margin-top: 0;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.btn-logout {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-logout:hover {
+    background-color: #fecaca;
+    text-decoration: none;
+}
+
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #475569;
+    font-size: 14px;
+    width: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button,
+.btn-tambah {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.btn-tambah:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+}
+
+.btn-tambah {
+    margin-bottom: 16px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #e2e8f0;
+    color: #334155;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-kembali:hover {
+    background-color: #cbd5e1;
+    text-decoration: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #334155;
+    font-weight: 700;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+
+.aksi a,
+.btn-edit,
+.btn-hapus {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.aksi a:first-child,
+.btn-edit {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.aksi a:first-child:hover,
+.btn-edit:hover {
+    background-color: #fde68a;
+    text-decoration: none;
+}
+
+.aksi a:last-child,
+.btn-hapus {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.aksi a:last-child:hover,
+.btn-hapus:hover {
+    background-color: #fecaca;
+    text-decoration: none;
+}
+
+
+.error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #fecaca;
+}
+
+.sukses,
+.success {
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #bbf7d0;
+}
+
+.link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.keterangan {
+    font-size: 13px;
+    color: #64748b;
+}

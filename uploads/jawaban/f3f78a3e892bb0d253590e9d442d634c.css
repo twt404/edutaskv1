@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+}
+
+/* Kotak kecil di tengah untuk halaman Login & Register */
+.kotak-tengah {
+    max-width: 380px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+/* Kotak form tambah & edit barang di tengah */
+.kotak-form {
+    max-width: 460px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+/* Kotak halaman utama tabel */
+.kotak-utama {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.form-grup {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tombol-biru {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.tombol-hijau {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+.tombol-abu {
+    background-color: #64748b;
+    color: #ffffff;
+}
+
+.tombol-kuning {
+    background-color: #eab308;
+    color: #ffffff;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.tombol-merah {
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.link-logout {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+}
+
+.pesan-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+.footer-link {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#bdffdc","surface-tint":"#0053db","on-surface":"#0d1c2e","primary-container":"#2563eb","error-container":"#ffdad6","on-tertiary":"#ffffff","secondary-container":"#86f2e4","surface-container":"#e6eeff","on-surface-variant":"#434655","secondary-fixed":"#89f5e7","primary":"#004ac6","surface-container-high":"#dce9ff","on-primary-container":"#eeefff","primary-fixed-dim":"#b4c5ff","on-error":"#ffffff","on-background":"#0d1c2e","on-secondary-fixed-variant":"#005049","background":"#f8f9ff","error":"#ba1a1a","outline":"#737686","inverse-surface":"#233144","surface-container-highest":"#d5e3fc","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","tertiary-container":"#007d57","tertiary":"#006243","on-tertiary-fixed-variant":"#005137","tertiary-fixed":"#85f8c4","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","secondary":"#006a61","inverse-on-surface":"#eaf1ff","surface-variant":"#d5e3fc","on-primary-fixed-variant":"#003ea8","on-primary":"#ffffff","on-secondary":"#ffffff","on-primary-fixed":"#00174b","primary-fixed":"#dbe1ff","surface":"#f8f9ff","secondary-fixed-dim":"#6bd8cb","on-secondary-container":"#006f66","on-tertiary-fixed":"#002114","surface-dim":"#ccdbf3","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-fixed-dim":"#68dba9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","margin-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem",margin:"2rem"},fontFamily:{"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"label-lg":["Inter"]},fontSize:{"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><img alt="EduTask Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCWA6sfy4J-InixApEz3yJx8SsdJRPm0Hzh_GIPj_A4RMN1bQYS-BfMWjgqTJHQA-VNagPH4Bx5UxJDMUH52kgEFr0F-gDyMOd5weH0uOU0eRSNypk_wOtNSvwQFRpmy4PWOWeK-gXOVIqpLFbBHLbHDoq-uY1UbSQ0wmyw6uKU9HrHvOZUjkmde6iElPVY0zixZbeFra1-I-ACEv28rA9OA0_ChrkOVx7zCqcsN-A6"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold leading-none">EduTask</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Learning System</span></div></div><div class="px-space-md pt-space-md"><p class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Menu Utama</p><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard-guru" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard Guru</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="buat-tugas" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span class="font-label-lg text-label-lg">Buat Tugas</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-xl" data-path="ruang-siswa" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span class="font-label-lg text-label-lg">Ruang Siswa</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="penilaian-dan-review" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-lg text-label-lg">Penilaian &amp; Review</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan-kelas" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Pengaturan Kelas</span></a></nav></div></div><div class="p-space-md"><div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-semibold"><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-label-md text-label-md">Lisensi Sekolah Aktif</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">T.A 2024/2025 Semester Genap</p></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-all" placeholder="Cari tugas, materi, atau siswa..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-3 py-1.5 bg-secondary-container/40 rounded-full"><span class="material-symbols-outlined text-[16px] text-on-secondary-container">school</span><span class="font-label-md text-label-md text-on-secondary-container font-semibold">Mode Guru: Ibu Sarah, M.Pd</span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-secondary-container">XII IPA 1</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm"><span class="material-symbols-outlined text-[18px]">school</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Sarah Agustina</span><span class="font-label-sm text-label-sm text-on-surface-variant">Guru Biologi</span></div></div></div></header><main class="relative pt-16 w-full px-gutter min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow contained within context -->
+<div class="relative w-full overflow-hidden pb-12 pt-6">
+<div class="absolute -right-20 -top-24 h-96 w-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 h-72 w-72 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<!-- Top Breadcrumb & Quick Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-6">
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">folder_supervised</span>
+<span>Ruang Siswa</span>
+</a>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Fisika Terapan</span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Detail Tugas #TK-XII-04</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sinkronisasi Status Tim</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface text-label-sm font-label-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+<span>Pusat Bantuan Siswa</span>
+</button>
+</div>
+</div>
+<!-- Banner Utama Tugas Siswa -->
+<section class="relative bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm mb-8 overflow-hidden">
+<div class="absolute top-0 left-0 w-2.5 h-full bg-primary-container"></div>
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 relative z-10">
+<div class="flex-1 max-w-4xl space-y-4">
+<!-- Metadata Pill Badges -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Badge Tugas Kelompok (Lavender / Indigo Wash) -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+              Tugas Kelompok Terpadu
+            </span>
+<!-- Kelas Tag -->
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">class</span>
+              Fisika Kelas XII IPA 1
+            </span>
+<!-- Status Pill: Amber/Pending -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+              Status: Belum Dikumpulkan
+            </span>
+</div>
+<!-- Judul Proyek -->
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight font-bold">
+            Proyek Riset Penerapan Fisika Terapan dalam Teknologi Energi Terbarukan
+          </h1>
+<!-- Meta Guru & Deadline -->
+<div class="flex flex-wrap items-center gap-y-2 gap-x-6 pt-1 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">account_circle</span>
+<span class="font-body-md text-body-md">Guru Pembimbing: <strong class="text-on-surface font-semibold">Ibu Sarah, M.Pd</strong></span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">assignment</span>
+<span class="font-body-md text-body-md">Bobot Nilai: <strong class="text-on-surface font-semibold">30% Nilai Akhir Semester</strong></span>
+</div>
+</div>
+</div>
+<!-- Deadline Widget (Countdown Highlight Card) -->
+<div class="flex flex-col bg-surface-container-low p-4 rounded-xl shadow-inner min-w-[260px] lg:w-72">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Batas Waktu Akhir</span>
+<span class="material-symbols-outlined text-[18px] text-error">timer</span>
+</div>
+<div class="flex items-baseline gap-1 text-on-surface">
+<span class="font-headline-md text-headline-md font-bold text-error">2 Hari 14 Jam</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            28 Okt 2024 • Pukul 23:59 WIB
+          </p>
+<div class="mt-3 w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Dimulai 14 Okt</span>
+<span class="text-primary font-semibold">72% Waktu Berjalan</span>
+</div>
+</div>
+</div>
+<!-- Tab Navigasi Halaman -->
+<div class="mt-8 pt-4 flex flex-wrap gap-2">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Instruksi &amp; Materi</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">group_work</span>
+<span>Kolaborasi Tim (Kelompok 3)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">4 Siswa</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Pengumpulan Berkas (Submission)</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</button>
+</div>
+</section>
+<!-- Content Grid: 12 Columns Total (7 Left, 5 Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: 7 Columns wide -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<!-- SECTION 1: Instruksi Tugas & Panduan -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 lg:p-7 shadow-sm">
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-2.5">
+<span class="p-2 rounded-xl bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[22px]">format_list_bulleted</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Instruksi Tugas &amp; Tujuan Proyek</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Panduan resmi pengerjaan laboratorium dan analisis fisika terapan</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex px-2.5 py-1 rounded-md bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-medium">
+              Revisi Panduan v1.2
+            </span>
+</div>
+<div class="space-y-4 pt-2 text-on-surface font-body-md text-body-md leading-relaxed">
+<p>
+              Proyek ini menitikberatkan pada implementasi prinsip termodinamika, induksi elektromagnetik, atau konversi energi fotovoltaik pada prototipe perangkat ramah lingkungan. Setiap kelompok ditugaskan merancang proposal teknis terstruktur dan mendokumentasikan hasil pengujian eksperimen riil.
+            </p>
+<div class="bg-surface-container-low rounded-xl p-4.5 space-y-2">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                Kriteria Wajib Pengumpulan:
+              </h3>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant pl-6 list-disc">
+<li>Struktur laporan: Abstrak, Kajian Teori, Metodologi Riset, Perhitungan Efisiensi Konversi, Analisis Data Grafik, dan Kesimpulan.</li>
+<li>Format sitasi standar ilmiah minimal 5 referensi jurnal bereputasi atau modul resmi Kemendikbud.</li>
+<li>Setiap anggota kelompok <strong>wajib</strong> mengisi lembar matriks kontribusi tugas individu yang terlampir pada Bab Penutup.</li>
+<li>Lampiran foto dokumentasi perakitan instrumen atau simulasi perangkat berbasis software (PhET / MATLAB).</li>
+</ul>
+</div>
+<!-- Bagian File Unduhan Materi Pendukung -->
+<div class="pt-4">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">download_for_offline</span>
+                Materi Lampiran dari Guru Siap Diunduh
+              </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<!-- File Item 1 -->
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<span class="p-2 rounded-lg bg-error-container text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Panduan_Format_Laporan_Proyek.pdf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1.8 MB • PDF Terproteksi</p>
+</div>
+</div>
+<button class="ml-2 p-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm flex-shrink-0" title="Unduh File" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- File Item 2 -->
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<span class="p-2 rounded-lg bg-error-container text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Rubrik_Penilaian_Fisika_Energi.pdf</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">640 KB • Matriks Penilaian</p>
+</div>
+</div>
+<button class="ml-2 p-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm flex-shrink-0" title="Unduh File" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- SECTION 2: Status Tim Kelompok (Bio-Energy Team) -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 lg:p-7 shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-3 pb-5">
+<div class="flex items-center gap-3">
+<span class="p-2.5 rounded-xl bg-primary-container text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</span>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Status Tim: Kelompok 3</h2>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                    Bio-Energy Team
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 Anggota Aktif • Hak Akses Edit Kolaborasi</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Ruang Diskusi Tim</span>
+</button>
+</div>
+<!-- Notification helper -->
+<div class="flex items-center gap-2 p-3 bg-surface-container-low rounded-xl mb-5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">info</span>
+<span>Setiap anggota dapat melihat status upload, mereview draft laporan, dan memantau file revisi kelompok secara transparan.</span>
+</div>
+<!-- Member List (4 Students with specific photos) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<!-- Member 1: Farhan Pratama (You / Leader) -->
+<div class="relative p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Close up warm academic portrait of an Indonesian male student named Farhan wearing high school uniform batik with neat dark hair and confident focused expression, natural indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABPbK4bMWpv4eO2dUBhnE8hHA74EsYCQIOu7HQOauRtdh49JEvtKiZb7likKDGey9Ukcjez-z3xBuzLnQ3_ZXv_YTSWy8jhGWcfpGkFJDhtRzaNOpNYJINs0O5oV7Jslq7zZz-979smdOX7EbhdeFPcA_AP-D4XfwiYjQufVggAyiiZSG167Rd5HdfXM34buUPDmclLQ1pzOqwQ69PVos4ETHfrxI4eXkFFZ7NAcQ">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary text-[10px]" title="Online">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Farhan Pratama</span>
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[10px] font-semibold uppercase leading-none">Anda</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium">Ketua Kelompok • Editor Laporan</p>
+</div>
+</div>
+<span class="p-1 rounded-full text-tertiary font-label-sm text-[11px] bg-tertiary/10 px-2 py-0.5">
+                Siap Kirim
+              </span>
+</div>
+<!-- Member 2: Nabila Azzahra -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of an Indonesian teenage female high school student wearing white clean hijab and polite student uniform, soft library sunlight background, natural smiling expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEDsRIxYVIWSvQvmmmVNp7xBPAjJXRYe1Uyu9R0kl62mrNR1m5LCt8dMpGjI3gZcw98SRNCIx65HX_3Y60Wji__LpmkZoeBd6FptgPnmIuzSLCtQqfH_0eh2r1lgCI5TW7UEhCqnFjqST2gayGJBj8uX2nz9oEMJgFbJiZ3tISfTzAPRjAoD9SSBqD4jnVmu6KHEYMZS43mXeK1IgDkuqnP-3zs65W424VhuDyrYg">
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-surface-tint border-2 border-surface-container-lowest"></span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">Nabila Azzahra</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Penyusun Data Eksperimen</p>
+</div>
+</div>
+<span class="p-1 rounded-full text-tertiary font-label-sm text-[11px] bg-tertiary/10 px-2 py-0.5">
+                Setuju
+              </span>
+</div>
+<!-- Member 3: Dimas Rizky -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of young Southeast Asian male high school student wearing black framed eyeglasses and school polo shirt looking attentively at the viewer in study room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1O6MhzK7rQB3w7urmoO411nbjjfBi78LcGL3kzgRtaSxUlQsJ8pZKLK0S-SUMHgOIQtbCLuMfXtN6fS-l5R2sf9CtlMudFSk98m6B12dase-5ceAFq0IvLnrp_ViiWJes9HUhOmDoB2y4o3R3BAm9_RmqhvRmOJdevIky4VvCA1WGEKYTyxg6Y6Nw9U2O8UWcQhtxLrT3EPbEkDQK_HbZn8LG7xTXYDiWxnfHOY">
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-surface-tint border-2 border-surface-container-lowest"></span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">Dimas Rizky</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Analisis Perhitungan Efisiensi</p>
+</div>
+</div>
+<span class="p-1 rounded-full text-tertiary font-label-sm text-[11px] bg-tertiary/10 px-2 py-0.5">
+                Setuju
+              </span>
+</div>
+<!-- Member 4: Siti Aisyah -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Candid portrait of an Indonesian female high school student with modern pastel hijab working with digital tablet pencil in classroom setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtbq76P47zJqYvURpXtvIeswZkOs8Q9RTq748Qb649r2GsJti-5VWm_lyMSzw94sZUEGQPpRaz8NRjUHSF7QNTViB_xCsSCTlrzm2tI59c5zJS0tdveOuMYsQQdCxpPtVmAh_iSlQDrkLT1HkWyYb_KBhu__Nv9jcTyshy1a8MblZ0e5qhP9nEs1xZ-XTyIhS44j4oaomPTZwe_rcSDeNJvm25Mz8yDl-vMdWqd7E">
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-surface-tint border-2 border-surface-container-lowest"></span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">Siti Aisyah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Desain Grafis &amp; Presentasi</p>
+</div>
+</div>
+<span class="p-1 rounded-full text-tertiary font-label-sm text-[11px] bg-tertiary/10 px-2 py-0.5">
+                Setuju
+              </span>
+</div>
+</div>
+<!-- Team Progress Stat Bar -->
+<div class="mt-5 p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<!-- Inline mini SVG ring progress -->
+<div class="relative w-10 h-10 flex-shrink-0">
+<svg class="w-10 h-10 transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-dashoffset="0" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-label-sm text-label-sm font-bold text-tertiary">4/4</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Konsensus Persetujuan Final Tim</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seluruh anggota sudah mengunggah bagian materi dan menyetujui pengumpulan berkas akhir.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-lg bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold whitespace-nowrap self-start sm:self-center">
+              100% Sepakat
+            </span>
+</div>
+</article>
+</div>
+<!-- RIGHT COLUMN: 5 Columns wide -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- SECTION 3: Area Pengumpulan Tugas Kelompok (Upload Box) -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 lg:p-7 shadow-sm">
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-2.5">
+<span class="p-2 rounded-xl bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pengumpulan Berkas Kelompok</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Satu perwakilan mengumpulkan untuk seluruh anggota tim</p>
+</div>
+</div>
+</div>
+<!-- Interactive Drag and Dropzone -->
+<div class="mt-2 group relative p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer flex flex-col items-center justify-center text-center">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[30px]">file_upload</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">
+              Tarik &amp; lepas file tugas kelompok di sini
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              atau <span class="text-primary font-semibold underline underline-offset-2">Jelajahi File Komputer</span>
+</p>
+<div class="mt-3 flex flex-wrap justify-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded">PDF</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded">DOCX</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded">ZIP</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded">PPTX</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded">Maks. 50 MB</span>
+</div>
+<input aria-label="Unggah File Tugas" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" type="file">
+</div>
+<!-- Draft File yang sudah diunggah sementara -->
+<div class="mt-5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+                Berkas Terlampir Saat Ini (Draft Revisi)
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Tersimpan di Cloud
+              </span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-start gap-3">
+<span class="p-2.5 rounded-xl bg-error-container text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</span>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<p class="font-label-lg text-label-lg font-bold text-on-surface truncate">
+                      Draft_Laporan_Kelompok3_Fisika_Rev2.pdf
+                    </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    14.2 MB • Diunggah oleh <strong class="text-on-surface">Farhan Pratama</strong> 30 menit lalu
+                  </p>
+</div>
+</div>
+<!-- Quick action buttons for the file -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>Unduh Preview</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">cached</span>
+<span>Ganti File</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-error-container/40 hover:bg-error-container text-error font-label-sm text-label-sm transition-colors shadow-sm ml-auto" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Hapus</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Input Catatan untuk Guru -->
+<div class="mt-5 space-y-1.5">
+<label class="block font-label-md text-label-md font-semibold text-on-surface" for="teacher-note">
+              Catatan Pengantar untuk Guru (Opsional)
+            </label>
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:bg-surface-container outline-none transition-all resize-none" id="teacher-note" placeholder="Tuliskan catatan khusus, kendala riset, tautan Google Drive video eksperimen, atau pesan untuk Ibu Sarah..." rows="3"></textarea>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>Maksimal 500 karakter</span>
+<span id="char-counter">0 / 500</span>
+</div>
+</div>
+<!-- Konfirmasi Checkbox Kelompok -->
+<div class="mt-5 p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<input class="mt-0.5 w-4 h-4 rounded text-primary-container bg-surface-container-lowest focus:ring-0 cursor-pointer" id="group-agreement" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none leading-relaxed" for="group-agreement">
+              Saya menyatakan bahwa seluruh <strong>anggota Kelompok 3</strong> telah berkontribusi aktif, membaca revisi akhir, dan menyetujui pengumpulan berkas ini tanpa plagiarisme.
+            </label>
+</div>
+<!-- CTA Utama: Kirim Tugas Kelompok -->
+<div class="mt-6 flex flex-col gap-2">
+<button class="w-full py-3.5 px-6 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2.5 transition-all shadow-md active:scale-[0.99]" id="btn-submit-task" type="button">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>Kirim Tugas Kelompok Sekarang</span>
+</button>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center">
+              Tugas masih dapat ditarik kembali sebelum tenggat 28 Oktober 23:59 WIB.
+            </p>
+</div>
+</article>
+<!-- SECTION 4: Riwayat & Log Aktivitas Kelompok -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 lg:p-7 shadow-sm">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Riwayat Log Tim Kelompok 3</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pembaruan Realtime</span>
+</div>
+<div class="mt-4 relative pl-6 space-y-5 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Log 1: Upload Rev 2 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-primary-container shadow-sm"></span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Farhan Pratama mengunggah Revisi ke-2</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menyempurnakan grafik hasil efisiensi solar cell dan tabel data pengujian 12V.</p>
+<span class="font-label-sm text-label-sm text-outline font-medium">Hari ini, 15:30 WIB</span>
+</div>
+<!-- Log 2: Persetujuan Siti Aisyah -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Siti Aisyah menyelesaikan ilustrasi diagram</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bagan sirkuit fotovoltaik dimasukkan ke halaman lampiran Bab 3.</p>
+<span class="font-label-sm text-label-sm text-outline font-medium">Hari ini, 13:15 WIB</span>
+</div>
+<!-- Log 3: Review Dimas & Nabila -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Dimas Rizky menyetujui perhitungan matematis</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">"Perhitungan daya keluaran P = V x I sudah sinkron dengan data multimeter."</p>
+<span class="font-label-sm text-label-sm text-outline font-medium">Kemarin, 20:45 WIB</span>
+</div>
+<!-- Log 4: Draft Pertama dibuat -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Kelompok 3 Menginisiasi Proyek Bersama</p>
+<span class="font-label-sm text-label-sm text-outline font-medium">20 Okt 2024, 09:00 WIB</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const textarea = document.getElementById('teacher-note');
+    const counter = document.getElementById('char-counter');
+    const btnSubmit = document.getElementById('btn-submit-task');
+    const checkbox = document.getElementById('group-agreement');
+
+    if (textarea && counter) {
+      textarea.addEventListener('input', function() {
+        const len = textarea.value.length;
+        counter.textContent = `${len} / 500`;
+        if (len > 500) {
+          counter.classList.add('text-error');
+        } else {
+          counter.classList.remove('text-error');
+        }
+      });
+    }
+
+    if (btnSubmit) {
+      btnSubmit.addEventListener('click', function() {
+        if (checkbox && !checkbox.checked) {
+          alert('Mohon centang kotak persetujuan kontribusi kelompok sebelum mengirim tugas.');
+          checkbox.focus();
+          return;
+        }
+        
+        btnSubmit.innerHTML = `
+          <span class="material-symbols-outlined text-[22px] animate-spin">progress_activity</span>
+          <span>Mengirimkan Berkas Kelompok...</span>
+        `;
+        btnSubmit.disabled = true;
+
+        setTimeout(() => {
+          btnSubmit.innerHTML = `
+            <span class="material-symbols-outlined text-[22px]">task_alt</span>
+            <span>Tugas Berhasil Terkumpul!</span>
+          `;
+          btnSubmit.classList.remove('bg-primary-container', 'hover:bg-primary');
+          btnSubmit.classList.add('bg-tertiary-container', 'text-on-tertiary');
+        }, 1200);
+      });
+    }
+  })();
+</script></main></div>
+
+</body></html>

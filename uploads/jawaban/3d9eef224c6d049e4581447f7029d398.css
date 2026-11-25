@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(135deg, #41afe2, #ffffff);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+
+/* login */
+.tlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    min-height: 350px;
+    margin: 100px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.tlog:hover{
+    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* index */
+.tbl{
+    margin-left: 350px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: auto;
+}
+
+.kotakt{
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.jeneng{
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* register */
+.reg{
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    border: 1.5px solid black;
+    background-color: aliceblue;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.reg:hover{
+    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25);
+}
+
+/* nambah */
+.pos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    min-height: 350px;
+    margin: 100px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.pos:hover{
+    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,792 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#bdffdc","surface-tint":"#0053db","on-surface":"#0d1c2e","primary-container":"#2563eb","error-container":"#ffdad6","on-tertiary":"#ffffff","secondary-container":"#86f2e4","surface-container":"#e6eeff","on-surface-variant":"#434655","secondary-fixed":"#89f5e7","primary":"#004ac6","surface-container-high":"#dce9ff","on-primary-container":"#eeefff","primary-fixed-dim":"#b4c5ff","on-error":"#ffffff","on-background":"#0d1c2e","on-secondary-fixed-variant":"#005049","background":"#f8f9ff","error":"#ba1a1a","outline":"#737686","inverse-surface":"#233144","surface-container-highest":"#d5e3fc","inverse-primary":"#b4c5ff","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","tertiary-container":"#007d57","tertiary":"#006243","on-tertiary-fixed-variant":"#005137","tertiary-fixed":"#85f8c4","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","secondary":"#006a61","inverse-on-surface":"#eaf1ff","surface-variant":"#d5e3fc","on-primary-fixed-variant":"#003ea8","on-primary":"#ffffff","on-secondary":"#ffffff","on-primary-fixed":"#00174b","primary-fixed":"#dbe1ff","surface":"#f8f9ff","secondary-fixed-dim":"#6bd8cb","on-secondary-container":"#006f66","on-tertiary-fixed":"#002114","surface-dim":"#ccdbf3","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-fixed-dim":"#68dba9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem","margin-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem",margin:"2rem"},fontFamily:{"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"label-lg":["Inter"]},fontSize:{"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><img alt="EduTask Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCWA6sfy4J-InixApEz3yJx8SsdJRPm0Hzh_GIPj_A4RMN1bQYS-BfMWjgqTJHQA-VNagPH4Bx5UxJDMUH52kgEFr0F-gDyMOd5weH0uOU0eRSNypk_wOtNSvwQFRpmy4PWOWeK-gXOVIqpLFbBHLbHDoq-uY1UbSQ0wmyw6uKU9HrHvOZUjkmde6iElPVY0zixZbeFra1-I-ACEv28rA9OA0_ChrkOVx7zCqcsN-A6"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold leading-none">EduTask</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Learning System</span></div></div><div class="px-space-md pt-space-md"><p class="px-space-sm pb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Menu Utama</p><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard-guru" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard Guru</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="buat-tugas" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span class="font-label-lg text-label-lg">Buat Tugas</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ruang-siswa" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span class="font-label-lg text-label-lg">Ruang Siswa</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="penilaian-dan-review" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-lg text-label-lg">Penilaian &amp; Review</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="rekap-nilai" href="#"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="font-label-lg text-label-lg">Rekap Nilai</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan-kelas" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Pengaturan Kelas</span></a></nav></div></div><div class="p-space-md"><div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-semibold"><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-label-md text-label-md">Lisensi Sekolah Aktif</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">T.A 2024/2025 Semester Genap</p></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-all" placeholder="Cari tugas, materi, atau siswa..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-3 py-1.5 bg-secondary-container/40 rounded-full"><span class="material-symbols-outlined text-[16px] text-on-secondary-container">school</span><span class="font-label-md text-label-md text-on-secondary-container font-semibold">Mode Guru: Ibu Sarah, M.Pd</span><span class="text-outline-variant">•</span><span class="font-label-sm text-label-sm text-on-secondary-container">XII IPA 1</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"></path></svg></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Sarah Agustina</span><span class="font-label-sm text-label-sm text-on-surface-variant">Guru Biologi</span></div></div></div></header><main class="relative pt-16 w-full px-gutter min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Academic Context Header & Action Bar -->
+<section class="py-space-md mb-space-sm flex flex-col gap-space-md">
+<!-- Breadcrumb & Status Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">school</span>
+          Kelas XII IPA 1
+        </span>
+<span>/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Tugas &amp; Asesmen</span>
+<span>/</span>
+<span class="text-primary font-semibold">Rekap Nilai &amp; Laporan Rapor</span>
+</nav>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Status Sinkronisasi: Terkini (Otomatis)
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Update: Hari ini 14:20 WIB</span>
+</div>
+</div>
+<!-- Title & Action Buttons -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Rekapitulasi Nilai &amp; Laporan Rapor Siswa
+          </h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm">
+            Kurikulum Merdeka 2024
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Pantau performa kumulatif tugas individu, proyek kelompok, dan cetak atau ekspor lembar rekap rapor resmi berstandar Dinas Pendidikan.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Export Excel (Green Themed) -->
+<button class="group relative flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-sm hover:bg-tertiary-container transition-all active:scale-[0.98]" id="btn-export-excel">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">table_view</span>
+<span>Ekspor Excel (.xlsx)</span>
+<span class="material-symbols-outlined text-[16px] opacity-70 group-hover:translate-y-0.5 transition-transform">download</span>
+</button>
+<!-- Export PDF (Document Themed) -->
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-highest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all active:scale-[0.98] shadow-sm" id="btn-export-pdf">
+<span class="material-symbols-outlined text-[20px] text-error" style="font-variation-settings: 'FILL' 1;">picture_as_pdf</span>
+<span>Cetak / PDF (.pdf)</span>
+</button>
+<!-- Lock Rapor Action -->
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all active:scale-[0.98]" id="btn-lock-grade">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span>Kunci Nilai Rapor</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter & Class Selector Matrix -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md mb-space-lg shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-space-md items-end">
+<!-- Selector Kelas -->
+<div class="xl:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>KELAS &amp; JUMLAH SISWA</span>
+<span class="text-primary font-semibold">Aktif</span>
+</label>
+<div class="relative">
+<select class="w-full h-[42px] appearance-none pl-10 pr-9 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md font-medium outline-none focus:bg-surface-container transition-all cursor-pointer">
+<option selected="">XII IPA 1 (36 Siswa)</option>
+<option>XII IPA 2 (35 Siswa)</option>
+<option>XII IPA 3 (36 Siswa)</option>
+<option>XI IPA 1 (34 Siswa)</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">groups</span>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Selector Mata Pelajaran -->
+<div class="xl:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant">MATA PELAJARAN / KODE</label>
+<div class="relative">
+<select class="w-full h-[42px] appearance-none pl-10 pr-9 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md font-medium outline-none focus:bg-surface-container transition-all cursor-pointer">
+<option selected="">Fisika Terapan (FSK-302)</option>
+<option>Biologi Molekuler (BIO-301)</option>
+<option>Kimia Organik (KIM-304)</option>
+<option>Matematika Peminatan (MAT-303)</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">science</span>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Semester Selector -->
+<div class="xl:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant">TAHUN &amp; SEMESTER</label>
+<div class="relative">
+<select class="w-full h-[42px] appearance-none pl-9 pr-8 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md font-medium outline-none focus:bg-surface-container transition-all cursor-pointer">
+<option selected="">Ganjil 2024/2025</option>
+<option>Genap 2023/2024</option>
+<option>Ganjil 2023/2024</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant text-[18px]">calendar_month</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter Komponen Bobot -->
+<div class="xl:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant">KOMPONEN ASESMEN</label>
+<div class="relative">
+<select class="w-full h-[42px] appearance-none pl-8 pr-7 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container transition-all cursor-pointer truncate">
+<option selected="">Semua Komponen (T1, T2, Proyek, Kuis)</option>
+<option>Hanya Tugas Individu (T1 &amp; T2)</option>
+<option>Hanya Proyek Kelompok</option>
+<option>Hanya Ulangan Harian &amp; Kuis</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant text-[18px]">tune</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Quick Search & Sort -->
+<div class="xl:col-span-2 flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full h-[42px] pl-9 pr-3 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant outline-none focus:bg-surface-container transition-all" id="table-search" placeholder="Cari NISN/Nama..." type="text">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant text-[18px]">search</span>
+</div>
+<button class="h-[42px] px-3 bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Opsi Urutan Nilai">
+<span class="material-symbols-outlined text-[20px]">sort</span>
+</button>
+</div>
+</div>
+</section>
+<!-- KPI / Academic Metrics Bento Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Rata-Rata Kelas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rata-Rata Kumulatif</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">88.4</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between border-t border-surface-container-low">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+          +13.4 poin dari KKM (75)
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standar Baik Sekali</span>
+</div>
+</div>
+<!-- Card 2: Kelulusan KKM -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ketuntasan KKM Fisika</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-tertiary font-bold">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">(36 / 36 Siswa)</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-tertiary-fixed/40 text-tertiary">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Linear visual indicator -->
+<div class="mt-3 pt-3 space-y-1.5">
+<div class="w-full h-2 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-full"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Ambang KKM: 75</span>
+<span class="text-tertiary font-semibold">Target Kelas Terpenuhi</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Nilai Tertinggi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pencapaian Tertinggi</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">98.0</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">Predikat A</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover shrink-0" data-alt="Close up photographic avatar of Indonesian high school male student wearing a neat white and grey uniform smiling confidently against a soft academic campus backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXCCJO-8WLddoVCxP0VrgdXBI9-GUvck5HrmEN1KeCfPj_yHBv1Sz0q1dbR3LiRRWwOp6khQzHDWvXekEQHZzPqbk-DiwEMuhrBWaRy5R4JfYnF0p_RIOcsdclRZZPFab9uqj4vfpJphTP1KKWlHoOiPvp739JioTQZT4qVUdLoqw9l-q_QTNpRUwBvbLM3lrozedexB8iY1VHddC-vqeYIvZOCpx3tKzh0g5lfCY">
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Farhan Prasetyo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Riset Biomassa (Tim 3)</p>
+</div>
+</div>
+</div>
+<!-- Card 4: Status Verifikasi Tugas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tugas Belum Dinilai</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-tertiary font-bold">0</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Berkas Tersisa</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kesiapan Rapor:</span>
+<span class="px-2.5 py-1 rounded-md bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Siap Diekspor
+        </span>
+</div>
+</div>
+</section>
+<!-- Comprehensive Gradebook Table Section -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg flex flex-col">
+<!-- Table Header Info Bar -->
+<div class="p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm bg-surface-container-low/40">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+          Daftar Nilai Buku Rapor Semester Ganjil
+        </h2>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm font-semibold">
+          Bobot Total: 100%
+        </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>Perhitungan otomatis dengan formula standar penilaian akademik</span>
+</div>
+</div>
+<!-- Responsive Scrollable Data Grid -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider border-b border-surface-container">
+<th class="py-3.5 px-4 font-semibold text-center w-12">No</th>
+<th class="py-3.5 px-4 font-semibold min-w-[220px]">Identitas Siswa</th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[130px]">
+<div>Tugas 1 (Individu)</div>
+<div class="text-[10px] text-primary lowercase tracking-normal">bobot: 20%</div>
+</th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[130px]">
+<div>Tugas 2 (Individu)</div>
+<div class="text-[10px] text-primary lowercase tracking-normal">bobot: 20%</div>
+</th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[150px]">
+<div>Proyek (Kelompok)</div>
+<div class="text-[10px] text-secondary lowercase tracking-normal">bobot: 30%</div>
+</th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[130px]">
+<div>Kuis &amp; Harian</div>
+<div class="text-[10px] text-primary lowercase tracking-normal">bobot: 30%</div>
+</th>
+<th class="py-3.5 px-4 font-semibold text-center min-w-[110px] bg-primary-fixed/30 text-on-primary-fixed">
+              Nilai Akhir
+            </th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[80px]">Predikat</th>
+<th class="py-3.5 px-3 font-semibold text-center min-w-[110px]">Status</th>
+<th class="py-3.5 px-4 font-semibold text-right min-w-[120px]">Lembar Rapor</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md text-on-surface">
+<!-- Row 1: Farhan Prasetyo -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">1</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of a young Indonesian male high school student with short neat black hair and a white collared uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhPosuK-lc-YjkuM5fKhBElYAcxlHp9u3_83vqs8lOu9eGPNixbC5RpJwlyjhfEVAzGlpa7w2gfnaQ3rQi_4Xsp_iszenvyzg0s3NyxMoznB5sKPzpML-QHMtTUB9s9kBK77i26XO9C8DhHrePB9aXiMoLL385vdcOz79-waZbnLRsggKggGwwjHQS6rKmo1WHPqiEcjMDh2BV0rY5Ad6BDuY0GfowW9vafNw1cKI">
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Farhan Prasetyo</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821901</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 3 (Bio-Energy)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">94.0</td>
+<td class="py-3 px-3 text-center font-medium">92.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">95.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">96.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">94.6</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all" title="Buka Rincian Lembar Rapor Farhan">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Nabila Azzahra -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">2</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of an Indonesian female high school student wearing a white academic hijab and neat school uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBltB1A3010klmUUk5Cwbt3Y1aNvGM4WXEtbKClA7-sBL25CytlIHvlx7b8LF0I71caABjzf7nsYR-16zoJrrldN8bzWb3dbVKgv0jrom2AsnTiEr5TW3bUXN2BE_vWH0Yghd_ZIuuwN_gJEOCwn0szASgmwhItgpuptZSDsLgvHVEuUo5NUpTMK3gXz5VhjbnM2bumyJcVSBOAbQT8w7biGiOh-XjI-zQlGTjcyiQ">
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Nabila Azzahra</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821902</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 3 (Bio-Energy)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">90.0</td>
+<td class="py-3 px-3 text-center font-medium">88.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">95.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">92.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">91.8</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Dimas Rizky Pratama -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">3</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-md text-label-md font-bold text-primary shrink-0">
+                  DR
+                </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Dimas Rizky Pratama</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821903</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 3 (Bio-Energy)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">85.0</td>
+<td class="py-3 px-3 text-center font-medium">86.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">95.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">89.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">89.2</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-surface-container text-on-surface">A-</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Siti Aisyah Nurhaliza -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">4</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of a young Indonesian student girl with a gentle smile wearing school uniform and dark blue glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzE4KIUIz_1bSZFKX0Vh9jfnZbDnLvr367kZJ_rzTfRyVZKf-fkEKRkxHAogfXrs3hq_yM9dIAR2KYJ9k_J6EKdRMlFnRc67swzCQtYtkLKl-Gd0kSYEbT039nlaxxSvRQ2OOf1SGifi9DvVxGm2BJ-dATM4WHjilb-VBonTSwLBw0xftZrYJVVizwaEq5rIo3ow_IXE97o2VYEJfhsskKsmAQfAsQ073ftwGaWWc">
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Siti Aisyah Nurhaliza</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821904</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 3 (Bio-Energy)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">88.0</td>
+<td class="py-3 px-3 text-center font-medium">90.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">95.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">90.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">91.1</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Alif Akbar Ramadhan -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">5</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary/10 flex items-center justify-center font-label-md text-label-md font-bold text-tertiary shrink-0">
+                  AA
+                </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Alif Akbar Ramadhan</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821905</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 1 (Solar Panel)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">92.0</td>
+<td class="py-3 px-3 text-center font-medium">90.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">92.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">94.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">92.2</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Bryan Wijaya -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">6</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-md text-label-md font-bold text-on-surface-variant shrink-0">
+                  BW
+                </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Bryan Wijaya</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821906</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 2 (Geothermal)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">86.0</td>
+<td class="py-3 px-3 text-center font-medium">84.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">88.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">87.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">86.4</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed">B+</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 7: Cantika Putri Lestari -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">7</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="Portrait photo of an Indonesian female high school student with tidy hair in ponytail and neat white uniform shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFaL9pCxFtz-_81a7sDMp9s5ITjzCJE7Ab0RQLOtO-TRKyFtmGQ6_dufT8Ddymk7qk0fFu98VkXd2RPXsFpKLR_pT6gqzGVHfpCyYXmCDHRJJW0Izxuvq1FSfwAwP8Q_jzHl5CSxv6l2p5A2XvZM6AawQ6dAlUSoF_zJRk3uDjCmdI09JRYdIxLwj_807H6AtNEqWyzpBAlt_V1Y_Bzf0l3rh251GHaPkftBoY1eY">
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Cantika Putri Lestari</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821907</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 4 (Hydro Energy)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">89.0</td>
+<td class="py-3 px-3 text-center font-medium">91.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">90.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">93.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">91.0</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 8: Daffa Kusuma -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3 px-4 text-center font-label-md text-label-md text-on-surface-variant">8</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center font-label-md text-label-md font-bold text-primary shrink-0">
+                  DK
+                </div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Daffa Kusuma</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>NISN: 006821908</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">group</span> Tim 5 (Wind Turbine)
+                    </span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center font-medium">95.0</td>
+<td class="py-3 px-3 text-center font-medium">96.0</td>
+<td class="py-3 px-3 text-center">
+<span class="font-semibold text-secondary">95.0</span>
+</td>
+<td class="py-3 px-3 text-center font-medium">96.0</td>
+<td class="py-3 px-4 text-center bg-primary-fixed/20">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">95.5</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed">A</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tuntas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span>Rincian</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t border-surface-container-low">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Menampilkan</span>
+<span class="font-semibold text-on-surface">1 - 8</span>
+<span>dari</span>
+<span class="font-semibold text-on-surface">36</span>
+<span>Siswa (Kelas XII IPA 1)</span>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center font-label-sm text-label-sm font-bold bg-primary text-on-primary">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center font-label-sm text-label-sm text-on-surface hover:bg-surface-container">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center font-label-sm text-label-sm text-on-surface hover:bg-surface-container">
+          3
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center font-label-sm text-label-sm text-on-surface hover:bg-surface-container">
+          4
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center font-label-sm text-label-sm text-on-surface hover:bg-surface-container">
+          5
+        </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Export Configuration & Curriculum Standard Parameters Panel -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-space-lg">
+<!-- Left: Standard & Formats -->
+<div class="space-y-space-sm flex-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Konfigurasi &amp; Parameter Cetak Dokumen Rapor Resmi
+          </h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pilih komponen asesmen yang disertakan dalam cetak fisik dan arsip digital Dapodik sekolah:
+        </p>
+<!-- Checkbox Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<!-- Check 1 -->
+<label class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox">
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Tampilkan Nilai Mentah &amp; Bobot</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sertakan breakdown 20% T1, 20% T2, 30% Proyek, 30% Kuis.</p>
+</div>
+</label>
+<!-- Check 2 -->
+<label class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox">
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Catatan Karakter Pelajar Pancasila</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Integrasi dimensi Gotong Royong &amp; Bernalar Kritis.</p>
+</div>
+</label>
+<!-- Check 3 -->
+<label class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox">
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Tanda Tangan Digital &amp; QR Verifikasi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Guru Pengampu (Ibu Sarah, M.Pd) &amp; Wali Kelas.</p>
+</div>
+</label>
+<!-- Check 4 -->
+<label class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="mt-0.5 accent-primary w-4 h-4 rounded cursor-pointer" type="checkbox">
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Sertakan Grafik Distribusi Gauss</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visual kurva sebaran nilai kelas untuk laporan dinas.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Right: Template Format Radio -->
+<div class="w-full lg:w-80 p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between shrink-0 space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-2">FORMAT LAPORAN RESMI</span>
+<div class="space-y-2">
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4" name="rapor-template" type="radio">
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block leading-tight">Kurikulum Merdeka 2024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Deskripsi Capaian Pembelajaran</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<input class="accent-primary w-4 h-4" name="rapor-template" type="radio">
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block leading-tight">Format K-13 Revisi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pengetahuan &amp; Keterampilan Terpisah</span>
+</div>
+</label>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-surface-tint text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">sync_saved_locally</span>
+<span>Simpan Preferensi Ekspor</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Modal / Notification Trigger Simulation Script -->
+<script>
+    // Micro-interactions for table search
+    const searchInput = document.getElementById('table-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+
+    // Ekspor Excel Feedback
+    const btnExcel = document.getElementById('btn-export-excel');
+    if (btnExcel) {
+      btnExcel.addEventListener('click', () => {
+        const originalText = btnExcel.innerHTML;
+        btnExcel.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Menyiapkan .xlsx...</span>';
+        setTimeout(() => {
+          btnExcel.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span>Terekspor!</span>';
+          setTimeout(() => {
+            btnExcel.innerHTML = originalText;
+          }, 2000);
+        }, 1200);
+      });
+    }
+
+    // Cetak PDF Feedback
+    const btnPdf = document.getElementById('btn-export-pdf');
+    if (btnPdf) {
+      btnPdf.addEventListener('click', () => {
+        window.print();
+      });
+    }
+
+    // Kunci Nilai Feedback
+    const btnLock = document.getElementById('btn-lock-grade');
+    if (btnLock) {
+      btnLock.addEventListener('click', () => {
+        const confirmLock = confirm('Apakah Anda yakin ingin memfinalisasi dan mengunci nilai rapor kelas XII IPA 1? Nilai yang dikunci tidak dapat diubah tanpa izin Kepala Sekolah.');
+        if (confirmLock) {
+          btnLock.classList.remove('bg-primary');
+          btnLock.classList.add('bg-tertiary', 'pointer-events-none');
+          btnLock.innerHTML = '<span class="material-symbols-outlined text-[20px]">lock</span><span>Nilai Rapor Terkunci</span>';
+        }
+      });
+    }
+  </script>
+</div></main></div>
+
+</body></html>

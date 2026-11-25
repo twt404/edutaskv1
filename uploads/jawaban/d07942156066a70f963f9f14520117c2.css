@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #174f80;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button, .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #175789;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #175789;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #cbd7e3;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6fa;
+}
+
+.edit {
+    background: #2196F3;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hapus {
+    background: #e53935;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}

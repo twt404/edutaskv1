@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.kartu-formulir {
+    width: min(100%, 440px);
+    padding: 28px;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    background: #1e293b;
+}
+
+.tautan-kembali {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.pengantar {
+    margin: 0 0 20px;
+    color: #f8fafc;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 6px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    margin-top: 8px;
+    border-color: #0F172A;
+    background: #0F172A;
+    color: #f8fafc;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #222;
+}
+
+@media (max-width: 480px) {
+    .kartu-formulir {
+        padding: 22px;
+    }
+}
